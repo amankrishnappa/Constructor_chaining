@@ -1,0 +1,38 @@
+public class SBI {
+	int accno;
+	String name;
+	String address;
+
+	public SBI()
+	{
+		System.out.println("welcome to SBI");
+	}
+	
+	public SBI(int accno)
+	{
+		this();
+		this.accno=accno;
+	}
+	
+	public SBI(int accno,String name)
+	{
+	this.accno=accno;
+	this.name=name;
+	}
+	
+	public SBI (int accno,String name,String address)
+	{
+		this(accno,name);
+		this.address=address;
+	}
+	public void display() {
+		System.out.println("name: " + name + " accno: " + accno + " address: " + address);
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			SBI s=new SBI(1234,"Aman","Hassan");
+			s.display();
+		
+	}
+
+}
